@@ -31,7 +31,7 @@ const Header = () => {
                   <Link to={"/about"}>About </Link>
                 </li>
                 <li>
-                  <Link to={"/services"}>Services</Link>
+                  <Link to={"/contact"}>Contact</Link>
                 </li>
                 <li>
                   <Link to={"/webshop"}>Webshop</Link>
@@ -44,7 +44,7 @@ const Header = () => {
   return (
     <div>
       <Box>
-        <AppBar component={'nav'} sx={{bgcolor:"#e3e391"}}>
+        <AppBar component={'nav'} sx={{bgcolor:"#83eb6e"}}>
           <Toolbar>
             <IconButton color='black' 
                         aria-label='open drawer' 
@@ -74,7 +74,7 @@ const Header = () => {
                   <Link to={"/about"}>About </Link>
                 </li>
                 <li>
-                  <Link to={"/services"}>Services</Link>
+                  <Link to={"/contact"}>Contact</Link>
                 </li>
                 <li>
                   <Link to={"/webshop"}>Webshop</Link>
@@ -95,6 +95,10 @@ const Header = () => {
 
         </Box>
       </Box>
+      <Box>
+      <Toolbar/>
+      </Box>
+    
     </div>
   )
 }

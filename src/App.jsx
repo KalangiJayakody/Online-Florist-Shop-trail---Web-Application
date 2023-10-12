@@ -4,9 +4,10 @@ import { BrowserRouter, Routes, Route} from 'react-router-dom'
 import Homepage from './Pages/Homepage';
 import About from './Pages/About';
 import Webshop from './Pages/Webshop';
-import Services from './Pages/Services';
+import Contact from './Pages/Contact';
 import Pagenotfound from './Pages/Pagenotfound';
-
+import Login from './Pages/Login';
+import Signup from './Pages/Signup';
 
 
 function App() {
@@ -17,8 +18,11 @@ function App() {
           <Route path='/' element={<Homepage/>}/>
           <Route path='/about' element={<About/>}/>
           <Route path='/webshop' element={<Webshop/>}/>
-          <Route path='/services' element={<Services/>}/>
+          <Route path='/contact' element={<Contact/>}/>
+          <Route path='/login' element={<Login/>}/>
+          <Route path='/signup' element={<Signup/>}/>
           <Route path='*' element={<Pagenotfound/>}/>
+          
         </Routes>
       </BrowserRouter>
     </div>
