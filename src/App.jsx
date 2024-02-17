@@ -8,11 +8,14 @@ import Contact from './Pages/Contact';
 import Pagenotfound from './Pages/Pagenotfound';
 import Login from './Pages/Login';
 import Signup from './Pages/Signup';
+import Cart from './Pages/Cart';
+import Webshopcontext, { Shopcontext } from './Context/Webshopcontext';
 
 
 function App() {
   return (
     <div>
+      
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<Homepage/>}/>
@@ -21,10 +24,12 @@ function App() {
           <Route path='/contact' element={<Contact/>}/>
           <Route path='/login' element={<Login/>}/>
           <Route path='/signup' element={<Signup/>}/>
+          <Route path='/cart' element={<Cart/>}/>
           <Route path='*' element={<Pagenotfound/>}/>
-          
+         
         </Routes>
       </BrowserRouter>
+  
     </div>
   );
 }
